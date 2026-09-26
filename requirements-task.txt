@@ -1,0 +1,19 @@
+# A/B 运行环境：WSL 内共享 venv ~/venvs/gsb-warehouse（Python 3.12.14）
+# 本文件只是版本记录。运行时不要 pip install、不要联网，解释器统一用：
+#   ~/venvs/gsb-warehouse/bin/python -m pytest tests/ -q
+
+# 直接依赖（仓库代码 import 到的）
+pydantic==2.9.2
+pydantic-settings==2.5.2
+python-dotenv==1.0.1
+
+# 测试
+pytest==8.3.3
+
+# 传递依赖（随上面几项一起装好的）
+annotated-types==0.8.0
+pydantic_core==2.23.4
+typing_extensions==4.16.0
+iniconfig==2.3.0
+packaging==26.3
+pluggy==1.6.0
